@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="My Invoices" icon-name="standard:quotes">
+        <template if:true={invoices}>
+            <lightning-datatable
+                key-field="Id"
+                data={invoices}
+                columns={columns}
+            >
+            </lightning-datatable>
+        </template>
+    </lightning-card>
+</template>
